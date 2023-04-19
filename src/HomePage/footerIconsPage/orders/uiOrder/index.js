@@ -70,11 +70,10 @@ export const order = () => {
       element:"div",
       className:"flex flex-col gap-4 p-5  pb-64 overflow-y-scroll",
       id:"section",
-      child:"hi"
+      
 
    }),
 ]
-// .classList.includes("")
 
    })
    Order.querySelector("#active").addEventListener("click",()=>{

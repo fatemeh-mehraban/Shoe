@@ -6,7 +6,7 @@ export function reneTextOrder(item) {
 
   Order.querySelector("#section").innerHTML += `
     <div id=${item.id} class="cardpro flex gap-2 items-center bg-white p-3 rounded-3xl">
-        <img src="${item.images}" alt="" class="p-2 rounded-3xl bg-gray-200 w-[30%] h-[150px]">
+        <img src="${item.images}" alt="" class="p-2 rounded-3xl bg-gray-200 w-[30%] h-[150px] aspect-square">
         <div class="w-full flex flex-col gap-3 ml-3">
           <div class="flex justify-between w-full">
             <p id="titleProductCart">${item.title}</p>

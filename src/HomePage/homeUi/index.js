@@ -1,7 +1,7 @@
 import { El } from "@/library"
 import{axiosUserInfo,Render,brandName,renderbrandprod,changebgBrand,fetchScroll,reneText,footer} from '@/HomePage'
 import {Routes} from '@/routes'
-// import {axiosApi} from '@/axios'
+
 let page=1
 export let arraylocal=[]
 export const addarraylocal =(arr)=>{
@@ -70,7 +70,7 @@ export const homePage = () => {
                     type:"text",
                     id:"search",
                     placeholder:"search",
-                    className:"w-full h-full bg-gray-100 p-2 rounded-full outline-none"
+                    className:"w-full h-full bg-gray-100 p-2 rounded-full outline-0 border-none focus:border-none focus:outline-0 focus:ring-0 active:border-none active:outline-0"
                 }),
             ]
         }),
@@ -325,12 +325,12 @@ export const homePage = () => {
             child:[
                 El({
                     element:"p",
-                    className:"text-xl",
+                    className:"text-lg font-bold",
                     child:"Most Popular"
                 }),
                 El({
                     element:"p",
-                    className:"text-lg",
+                    className:"text-md font-bold",
                     child:"See All"
                 })
             ]
@@ -343,7 +343,7 @@ export const homePage = () => {
             child:[
                 El({
                     element:"button",
-                    className:"text-lg border border-1 border-black h-10 px-5 rounded-full",
+                    className:"text-lg border border-1 border-black h-10 px-5 rounded-full bg-black text-white",
                     child:"All",
                     onclick:()=>{
                         Render()
@@ -432,18 +432,7 @@ information.querySelector("#search").addEventListener("focus",()=>{
     Routes().navigate("/searchPage")
 
 })
-// fetchScroll(page).then(res=>{
-//     reneText(res.data)
-// })
-// window.onscroll =()=>{
-//     const {scrollTop, clientHeight , scrollHeight} = document.documentElement
-//     if (scrollTop + clientHeight+1 >= scrollHeight) {
-//         fetchScroll(++page).then(res=>{
-//             reneText(res.data)
-//         })
 
-//     }
-// }
 changebgBrand()
 return information
 }

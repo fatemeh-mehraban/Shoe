@@ -13,11 +13,11 @@ export function ChooseShiping() {
                  
                 //  checkout.querySelector("#boxChooseCar").querySelector(".bi").classList.remove("bi-chevron-right")
                 //  checkout.querySelector(".bi").classList.add("bi-pencil-fill")
-                if(!send){
-                    // checkout.querySelector("#boxChooseCar").append(send)
-                    e.target.closest(".boxcheck").classList.add("hidden")
+                // if(!send){
+                //     // checkout.querySelector("#boxChooseCar").append(send)
+                //     e.target.closest(".boxcheck").classList.add("hidden")
 
-                }
+                // }
                      
                      console.log(checkout.querySelector("#boxChooseCar"));
                     //  Routes().navigate("/Checkout")

@@ -22,6 +22,7 @@ export const brandPage = () => {
                     El({
                         element:"span",
                         id:"brandName",
+                        className:"font-bold",
                         child:"brand"
                     })
                 ]

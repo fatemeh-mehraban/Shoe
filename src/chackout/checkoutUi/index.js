@@ -69,17 +69,44 @@ child:[
                         }),
                         El({
                             element:"div",
+                            id:"address",
                             className:"text-xl -ml-14",
                             child:[
-                                userAddress
-                            ]
+                                userAddress ? userAddress: El({
+                                    element:"div",
+                                    className:"home w-full mt-5",
+                                    child:[
+                                        El({
+                                            element:"label",
+                                            for:"bordered-radio-1",
+                                            className:"w-full py-4 ml-2 dark:text-gray-300 text-xl mt-5",
+                                            child:"Home"
+
+                                        }),
+                                        El({
+                                            element:"p",
+                                            className:"w-full py-4 ml-2 text-gray-500 dark:text-gray-300 text-sm -mt-3",
+                                            child:"4224 Sunbrook Park , pc,254"
+
+                                        })
+                                    ]
+                                })
+                                   
+                                
+                            ],
+                                
+                                 
+                            
                         }),
                         El({
                             element:"img",
                             className:"w-7",
                             src:"./img/edit.png",
-                            onclick:()=>{
+                            onclick:(e)=>{
                                 Routes().navigate("/HomeAddress")
+                                // e.target.previousElementSibling.innerHTML=""
+                                // e.target.previousElementSibling.append(userAddress)
+
                             },
                         }),
                     ]
@@ -122,23 +149,29 @@ child:[
                     id:"boxChooseCar",
                     className:" shadow-md bg-white rounded-xl flex px-3 justify-around items-center gap-5",
                     child:[
-                        El({
-                            element:"img",
-                            className:"w-10",
-                            src:"./img/car.png",
-                        }),
-                        El({
-                            element:"div",
-                            className:"text-xl",
-                            child:
-                                El({
-                                    element:"h2",
-                                    className:"text-xl",
-                                    child:"choose Shipping Type"
-                                }),
 
+                        send ? send : El({
+                            element:"div",
+                            className:"flex items-center gap-5 p-4",
+                            child:[
+                                El({
+                                    element:"img",
+                                    className:"w-10",
+                                    src:"./img/car.png",
+                                }),
+                                El({
+                                    element:"div",
+                                    className:"text-xl",
+                                    child:
+                                        El({
+                                            element:"h2",
+                                            className:"text-xl",
+                                            child:"choose Shipping Type"
+                                        }),
+        
+                                }),
+                            ]
                         }),
-                        send,
                         El({
                             element:"i",
                             className:"bi bi-chevron-right",   

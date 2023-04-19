@@ -22,13 +22,12 @@ export const searchPage = () => {
                         element:"input",
                         type:"text",
                         id:"search",
-                        className:"w-full h-full p-2 outline-none"
+                        className:"w-full h-full p-2 outline-0 border-none focus:border-none focus:outline-0 focus:ring-0 active:border-none active:outline-0"
                     }),
                     El({
                         element:"img",
                         id:"filter",
                         src:"../../img/Untitled.png",
-                        // className:"w-full h-full  p-2 outline-none"
                     }),
                 ]
             }),
@@ -45,7 +44,10 @@ export const searchPage = () => {
                     }),
                     El({
                         element:"span",
-                        child:"Clear All"
+                        child:"Clear All",
+                        onclick:()=>{
+                            localStorage.removeItem("search")
+                        }
                     }),
                 ]
             }),
@@ -78,6 +80,6 @@ export const searchPage = () => {
 
         NotFound()
     })
-
+    // saveInLocal()
 return searchpage
 }

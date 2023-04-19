@@ -11,7 +11,7 @@ export default {
         'hero-pattern': "url('../img/WallpaperDog-205346101.png')",
       },
       fontFamily:{
-        'Roboto':'Roboto'
+        'Roboto':'Inter'
       }
     },
     },

@@ -16,10 +16,10 @@ export function NotFound() {
                     box.innerHTML+= ` <div id="${elem.id}" class="boxproduct">
                     <div class="bg-gray-100 p-4 rounded-3xl"><img src="${elem.images}" alt=""></div>
                     <h3 class="text-lg font-bold">${elem.title}</h3>
-                    <div class="text-sm font-bold flex gap-2 justify-center items-center">
+                    <div class="text-sm font-bold flex gap-2 justify-center items-center flex-nowrap	">
                     <span><i class="bi bi-star-half"></i> </span>
-                    <span class="text-gray-500"> 4.5  |</span>
-                    <span class="bg-gray-200 p-3 rounded-md text-[12px] text-gray-700"> 8.374 sold</span>
+                    <span class="text-gray-500"> 4.5 |</span>
+                    <span class="bg-gray-200 p-2 rounded-md text-[12px] text-gray-700"> 8.374 sold</span>
                     </div>
                     <span class=" text-lg font-bold -mt-5"><span>$</span>${elem.price}</span>
                   </div>

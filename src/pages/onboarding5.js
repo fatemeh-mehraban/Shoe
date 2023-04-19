@@ -22,7 +22,7 @@ export const onboarding5 = () => {
                     }),
                     El({
                         element:"div",
-                        className:"mt-16 flex gap-1",
+                        className:"mt-5 flex gap-1",
                         child:[
                             El({
                                 element:"div",
@@ -42,7 +42,7 @@ export const onboarding5 = () => {
                         element:"button",
                         id:"next3",
                         className:"w-full bg-[#1E1E1E] text-white rounded-full p-3 mt-10",
-                        child:"Next",
+                        child:"Get Start",
                         onclick:()=>{
                             Routes().navigate("/login")
                         }

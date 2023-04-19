@@ -25,7 +25,7 @@ export const login = () => {
                     }),
                     El({
                         element:"p",
-                        className:"text-3xl",
+                        className:"text-3xl font-bold",
                         child:"Login to Your Account"  
                     })
                 ]
@@ -48,7 +48,7 @@ export const login = () => {
                             El({
                                 id:"inputEmail",
                                 element:'input',
-                                className:"w-full h-full w-10 bg-gray-100 outline-none",
+                                className:"w-full h-full w-10 bg-gray-100 outline-0 border-none focus:border-none focus:outline-0 focus:ring-0 active:border-none active:outline-0",
                                 placeholder:"Email",
                                 type:"text"
                             })
@@ -66,7 +66,7 @@ export const login = () => {
                             }),
                             El({
                                 element:'input',
-                                className:"w-full h-full w-10 bg-gray-100 outline-none",
+                                className:"w-full h-full w-10 bg-gray-100 outline-0 border-none focus:border-none focus:outline-0 focus:ring-0 active:border-none active:outline-0",
                                 placeholder:"password",
                                 type:"password",
                                 id:"inputPassword"
@@ -91,7 +91,7 @@ export const login = () => {
                             El({
                                 element:"div",
                                 id:"fakeCheckbox",
-                                className:"w-5 h-5 rounded-sm flex justify-center items-center border border-1 border-gray-400 absolute left-[125px] top-1 pt-1",
+                                className:"w-5 h-5 rounded-sm flex justify-center items-center border border-1 border-gray-400 absolute left-[125px] top-1 pt-1 mr-10",
                                 child:El({
                                     id:"fakeCheckboxTik",
                                     element:"i",
@@ -108,7 +108,7 @@ export const login = () => {
                                 element:"label",
                                 id:"rememberText",
                                 for:"remember",
-                                className:"ml-5 text-lg",
+                                className:"ml-10 text-lg",
                                 child:"Remember me"
                             })
                         ]

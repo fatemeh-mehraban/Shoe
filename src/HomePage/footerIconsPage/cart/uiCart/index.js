@@ -152,6 +152,7 @@ export const cart = () => {
                      arrayOfObj.map(item=>{
                      Cart.querySelector("#section").innerHTML=""
                      reneTextCart(item)
+                     
                     })
                     console.log(arrayOfObj);
                     e.target.closest("#deleteBox").classList.add("hidden")

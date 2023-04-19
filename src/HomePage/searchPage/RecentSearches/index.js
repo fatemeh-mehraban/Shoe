@@ -11,15 +11,18 @@ export function boxSearch() {
               filterSearch=searchArr.filter(item=>item !== e.target.closest("#suggestion").querySelector("#searchtext").innerHTML)
               updateSearchArr(filterSearch)
               renderSearch()
-              localStorage.setItem("search",searchArr)
+              if(searchpage.querySelector('#search').value =="") return
+              localStorage.setItem("search",JSON.stringify(searchArr))
             
+              }
+              if(e.target.id=="searchtext"){
+                searchpage.querySelector('#search').value =e.target.innerHTML
               }
           });
           
       }
-      // *********render search*****
+      // ********* render search   create box and suggestion div*****
       function renderSearch() {
-        // searchpage.querySelector('#showSearch').classList.add("hidden")
         let box = searchpage.querySelector('#RecentSearches')
        
         box.innerHTML =""

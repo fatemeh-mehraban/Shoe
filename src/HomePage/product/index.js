@@ -173,7 +173,7 @@ export const product = (data) => {
               }),
               El({
                 element: 'span',
-                child: '1',
+                child: '0',
                 className: 'text-lg font-bold',
                 id: 'number',
               }),
