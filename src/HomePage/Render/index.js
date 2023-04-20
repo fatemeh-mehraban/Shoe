@@ -19,9 +19,6 @@ export function reneText(item) {
     El({
       element: 'div',
       onclick: () => {
-        // product(item)
-        // document.querySelector('#app').innerHTML = '';
-        // document.querySelector('#app').appendChild(product(item));
         Routes().navigate(`/product/${item.id}`)
       },
 
@@ -51,12 +48,4 @@ export function reneText(item) {
       ],
     })
   );
-
-  // `
-  //   <div id="${item.id}" class="boxproduct">
-  //     <div class="bg-gray-100 p-4 rounded-3xl"><img src="${item.images}" alt=""></div>
-  //     <h3 class="text-lg font-bold mt-2">${item.title}</h3>
-  //     <span class=" text-md mt-2"><span>$</span>${item.price}</span>
-  //   </div>
-  //   `
 }

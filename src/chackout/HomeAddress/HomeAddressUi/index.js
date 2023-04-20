@@ -43,7 +43,7 @@ El({
 El({
 element:"div",
 id:"boxradio",
-className:"p-5 flex flex-col gap-5",
+className:"p-5 flex flex-col gap-5 pb-20",
 innerHTML:[
     `
     <div class="boxcheck shadow-md flex items-center pl-4  rounded-3xl bg-white px-5 py-2 dark:border-gray-700">
@@ -96,7 +96,28 @@ innerHTML:[
         </div>
     `
 ]
-})
+}),
+El({
+    element:"div",
+    id:"footer",
+    className:" pb-10 pt-6 px-5 w-full rounded-t-[40px] border-t-2",
+    child:El({
+        element:"button",
+        className:"bg-black text-white shadow-2xl w-full py-4 rounded-full flex justify-center items-center",
+        child:[
+           "Apply",
+        El({
+           element:"i",
+           className:"bi bi-arrow-right-short text-xl",
+        }),
+     ],
+     onclick : ()=>{
+        Routes().navigate("/Checkout()")
+
+     }
+     }),
+
+}),
 
 ]
 })

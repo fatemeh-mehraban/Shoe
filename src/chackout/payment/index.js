@@ -42,23 +42,24 @@ El({
                 ]})
             ]})
         ]}),
+        El({
+            element:"p",
+            className:"p-5",
+            child:"Select the payment method you want to use"
+        }),
 // ************************************div radio ******************************************************
 El({
 element:"div",
 id:"boxradio",
-className:"p-5 flex flex-col gap-5",
+className:"p-5 flex flex-col gap-5 pb-40",
 innerHTML:[
     `
     <div class="boxcheck flex items-center pl-4  rounded-3xl bg-white px-5 py-2 dark:border-gray-700">
-    <img src="./img/homeCheckout.png" class="w-20">
+    <img src="./img/pay2.png" class="w-20">
         <div class="first w-full mt-5">
-        <label for="bordered-radio-1" class="w-full py-4 ml-2 dark:text-gray-300 text-xl mt-5">Economy</label>
-        <p class="w-full py-4 ml-2 text-gray-500 dark:text-gray-300 text-sm -mt-3"> 4224 Sunbrook Park , pc,254</p>
+        <label for="bordered-radio-1" class="w-full py-4 ml-2 dark:text-gray-300 text-xl mt-5">MY Wallet</label>
         </div>
-        <div class="flex  text-2xl mr-2">
-        <span >$</span>
-        <span class ="priceCar">10</span>
-        </div>
+
     
         <input data-id="inputRadio" id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-black bg-gray-100 border-gray-300  focus:ring-black dark:focus:ring-black dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
 
@@ -68,15 +69,11 @@ innerHTML:[
 
 
         <div class=" boxcheck flex items-center pl-4  rounded-3xl bg-white px-5 py-2 dark:border-gray-700">
-    <img src="./img/homeCheckout.png" class="w-20">
+    <img src="./img/pay1.png" class="w-20">
         <div class="w-full mt-5">
-        <label for="bordered-radio-2" class="w-full py-4 ml-2 dark:text-gray-300 text-xl mt-5">Regular</label>
-        <p class="w-full py-4 ml-2 text-gray-500 dark:text-gray-300 text-sm -mt-3"> 4224 Sunbrook Park , pc,254</p>
+        <label for="bordered-radio-2" class="w-full py-4 ml-2 dark:text-gray-300 text-xl mt-5">PayPal</label>
         </div>
-        <div class="flex text-2xl mr-2">
-        <span >$</span>
-        <span class ="priceCar">10</span>
-        </div>
+
         <input data-id="inputRadio" id="bordered-radio-2" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-black bg-gray-100 border-gray-300  focus:ring-black dark:focus:ring-black dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
 
         </div>
@@ -85,15 +82,11 @@ innerHTML:[
 
 
         <div class="boxcheck flex items-center pl-4  rounded-3xl bg-white px-5 py-2 dark:border-gray-700">
-    <img src="./img/homeCheckout.png" class="w-20">
+    <img src="./img/pay3.png" class="w-20">
         <div class="w-full mt-5">
-        <label for="bordered-radio-3" class="w-full py-4 ml-2 dark:text-gray-300 text-xl mt-5">Cargo</label>
-        <p class="w-full py-4 ml-2 text-gray-500 dark:text-gray-300 text-sm -mt-3"> 4224 Sunbrook Park , pc,254</p>
+        <label for="bordered-radio-3" class="w-full py-4 ml-2 dark:text-gray-300 text-xl mt-5">Google Pay</label>
         </div>
-        <div class="flex text-2xl mr-2">
-        <span >$</span>
-        <span class ="priceCar" >10</span>
-        </div>
+
         <input data-id="inputRadio" id="bordered-radio-3" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-black bg-gray-100 border-gray-300  focus:ring-black dark:focus:ring-black dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
 
         </div>
@@ -102,15 +95,11 @@ innerHTML:[
 
 
         <div class="boxcheck flex items-center pl-4  rounded-3xl bg-white px-5 py-2 dark:border-gray-700">
-    <img src="./img/homeCheckout.png" class="w-20">
+    <img src="./img/pay4.png" class="w-20">
         <div class="w-full mt-5">
-        <label for="bordered-radio-4" class="w-full py-4 ml-2 dark:text-gray-300 text-xl mt-5">Express</label>
-        <p class="w-full py-4 ml-2 text-gray-500 dark:text-gray-300 text-sm -mt-3"> 4224 Sunbrook Park , pc,254</p>
+        <label for="bordered-radio-4" class="w-full py-4 ml-2 dark:text-gray-300 text-xl mt-5">Apple Pay</label>
         </div>
-        <div class="flex text-2xl mr-2">
-        <span >$</span>
-        <span class ="priceCar">10</span>
-        </div>
+
         <input data-id="inputRadio" id="bordered-radio-4" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-black bg-gray-100 border-gray-300  focus:ring-black dark:focus:ring-black dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
 
         </div>
